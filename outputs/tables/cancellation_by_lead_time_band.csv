@@ -1,0 +1,6 @@
+lead_time_band,bookings,cancellations,cancellation_rate
+31-90 days,29553,11141,0.377
+91-180 days,26439,11821,0.4471
+181+ days,24692,14077,0.5701
+0-7 days,19746,1902,0.0963
+8-30 days,18960,5283,0.2786

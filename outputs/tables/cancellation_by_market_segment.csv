@@ -1,0 +1,9 @@
+market_segment,bookings,cancellations,cancellation_rate
+Online TA,56477,20739,0.3672
+Offline TA/TO,24219,8311,0.3432
+Groups,19811,12097,0.6106
+Direct,12606,1934,0.1534
+Corporate,5295,992,0.1873
+Complementary,743,97,0.1306
+Aviation,237,52,0.2194
+Undefined,2,2,1.0

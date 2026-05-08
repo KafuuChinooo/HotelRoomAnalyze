@@ -1,0 +1,298 @@
+{
+  "data_path": "E:\\.Data\\StudentHealth\\Data\\hotel_bookings.csv",
+  "runtime_seconds": 23.58,
+  "raw_profile": {
+    "rows": 119390,
+    "columns": 32,
+    "duplicate_rows": 31994,
+    "memory_mb": 93.9,
+    "missing_cells": 129425,
+    "missing_by_column": {
+      "hotel": 0,
+      "is_canceled": 0,
+      "lead_time": 0,
+      "arrival_date_year": 0,
+      "arrival_date_month": 0,
+      "arrival_date_week_number": 0,
+      "arrival_date_day_of_month": 0,
+      "stays_in_weekend_nights": 0,
+      "stays_in_week_nights": 0,
+      "adults": 0,
+      "children": 4,
+      "babies": 0,
+      "meal": 0,
+      "country": 488,
+      "market_segment": 0,
+      "distribution_channel": 0,
+      "is_repeated_guest": 0,
+      "previous_cancellations": 0,
+      "previous_bookings_not_canceled": 0,
+      "reserved_room_type": 0,
+      "assigned_room_type": 0,
+      "booking_changes": 0,
+      "deposit_type": 0,
+      "agent": 16340,
+      "company": 112593,
+      "days_in_waiting_list": 0,
+      "customer_type": 0,
+      "adr": 0,
+      "required_car_parking_spaces": 0,
+      "total_of_special_requests": 0,
+      "reservation_status": 0,
+      "reservation_status_date": 0
+    },
+    "dtypes": {
+      "hotel": "object",
+      "is_canceled": "int64",
+      "lead_time": "int64",
+      "arrival_date_year": "int64",
+      "arrival_date_month": "object",
+      "arrival_date_week_number": "int64",
+      "arrival_date_day_of_month": "int64",
+      "stays_in_weekend_nights": "int64",
+      "stays_in_week_nights": "int64",
+      "adults": "int64",
+      "children": "float64",
+      "babies": "int64",
+      "meal": "object",
+      "country": "object",
+      "market_segment": "object",
+      "distribution_channel": "object",
+      "is_repeated_guest": "int64",
+      "previous_cancellations": "int64",
+      "previous_bookings_not_canceled": "int64",
+      "reserved_room_type": "object",
+      "assigned_room_type": "object",
+      "booking_changes": "int64",
+      "deposit_type": "object",
+      "agent": "float64",
+      "company": "float64",
+      "days_in_waiting_list": "int64",
+      "customer_type": "object",
+      "adr": "float64",
+      "required_car_parking_spaces": "int64",
+      "total_of_special_requests": "int64",
+      "reservation_status": "object",
+      "reservation_status_date": "object"
+    }
+  },
+  "schema": {
+    "missing_expected_columns": [],
+    "extra_columns": [
+      "arrival_date",
+      "arrival_month_num"
+    ]
+  },
+  "rows_after_cleaning": 119390,
+  "columns_after_features": 43,
+  "target_distribution": {
+    "0": {
+      "count": 75166,
+      "rate": 0.6296
+    },
+    "1": {
+      "count": 44224,
+      "rate": 0.3704
+    }
+  },
+  "top_correlations_with_cancellation": {
+    "lead_time": 0.2931233557607184,
+    "total_of_special_requests": -0.2346577739690245,
+    "required_car_parking_spaces": -0.19549781749449852,
+    "booking_changes": -0.14438099106132654,
+    "previous_cancellations": 0.11013280822284209,
+    "has_agent": 0.1020677738929103,
+    "has_company": -0.09931000303784186,
+    "is_repeated_guest": -0.0847934183570901
+  },
+  "quality_checks_path": "E:\\.Data\\StudentHealth\\outputs\\tables\\quality_checks.csv",
+  "tables": {
+    "numeric_summary": "E:\\.Data\\StudentHealth\\outputs\\tables\\numeric_summary.csv",
+    "categorical_summary": "E:\\.Data\\StudentHealth\\outputs\\tables\\categorical_summary.csv",
+    "target_counts": "E:\\.Data\\StudentHealth\\outputs\\tables\\target_counts.csv",
+    "cancellation_by_hotel": "E:\\.Data\\StudentHealth\\outputs\\tables\\cancellation_by_hotel.csv",
+    "cancellation_by_market_segment": "E:\\.Data\\StudentHealth\\outputs\\tables\\cancellation_by_market_segment.csv",
+    "cancellation_by_deposit_type": "E:\\.Data\\StudentHealth\\outputs\\tables\\cancellation_by_deposit_type.csv",
+    "cancellation_by_customer_type": "E:\\.Data\\StudentHealth\\outputs\\tables\\cancellation_by_customer_type.csv",
+    "cancellation_by_lead_time_band": "E:\\.Data\\StudentHealth\\outputs\\tables\\cancellation_by_lead_time_band.csv",
+    "monthly_cancellation": "E:\\.Data\\StudentHealth\\outputs\\tables\\monthly_cancellation.csv",
+    "correlation": "E:\\.Data\\StudentHealth\\outputs\\tables\\correlation.csv",
+    "cancellation_correlations": "E:\\.Data\\StudentHealth\\outputs\\tables\\cancellation_correlations.csv",
+    "cleaned_sample": "E:\\.Data\\StudentHealth\\outputs\\tables\\cleaned_sample.csv"
+  },
+  "figures": {
+    "target_distribution": "E:\\.Data\\StudentHealth\\outputs\\figures\\target_distribution.png",
+    "numeric_distributions": "E:\\.Data\\StudentHealth\\outputs\\figures\\numeric_distributions.png",
+    "correlation_heatmap": "E:\\.Data\\StudentHealth\\outputs\\figures\\correlation_heatmap.png",
+    "cancellation_by_categories": "E:\\.Data\\StudentHealth\\outputs\\figures\\cancellation_by_categories.png",
+    "boxplots_by_cancellation": "E:\\.Data\\StudentHealth\\outputs\\figures\\boxplots_by_cancellation.png",
+    "monthly_cancellation_rate": "E:\\.Data\\StudentHealth\\outputs\\figures\\monthly_cancellation_rate.png"
+  },
+  "model": {
+    "model_path": "E:\\.Data\\StudentHealth\\outputs\\models\\hotel_cancellation_model.joblib",
+    "rows": 119390,
+    "features": [
+      "hotel",
+      "lead_time",
+      "arrival_date_year",
+      "arrival_month_num",
+      "arrival_date_week_number",
+      "arrival_date_day_of_month",
+      "stays_in_weekend_nights",
+      "stays_in_week_nights",
+      "total_nights",
+      "adults",
+      "children",
+      "babies",
+      "total_guests",
+      "has_children",
+      "meal",
+      "country",
+      "market_segment",
+      "distribution_channel",
+      "is_repeated_guest",
+      "previous_cancellations",
+      "previous_bookings_not_canceled",
+      "booking_changes",
+      "deposit_type",
+      "agent",
+      "company",
+      "has_agent",
+      "has_company",
+      "days_in_waiting_list",
+      "customer_type",
+      "adr",
+      "adr_per_person",
+      "required_car_parking_spaces",
+      "total_of_special_requests",
+      "reserved_room_type"
+    ],
+    "target_positive_rate": 0.3704,
+    "test_rows": 23878,
+    "roc_auc": 0.9506,
+    "accuracy": 0.8755,
+    "precision": 0.8594,
+    "recall": 0.7939,
+    "f1": 0.8253,
+    "confusion_matrix": [
+      [
+        13884,
+        1149
+      ],
+      [
+        1823,
+        7022
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.8839370981091234,
+        "recall": 0.9235681500698464,
+        "f1-score": 0.9033181522446324,
+        "support": 15033.0
+      },
+      "1": {
+        "precision": 0.8593807367519275,
+        "recall": 0.7938948558507631,
+        "f1-score": 0.8253408556652563,
+        "support": 8845.0
+      },
+      "accuracy": 0.8755339643186196,
+      "macro avg": {
+        "precision": 0.8716589174305254,
+        "recall": 0.8587315029603048,
+        "f1-score": 0.8643295039549443,
+        "support": 23878.0
+      },
+      "weighted avg": {
+        "precision": 0.8748408163349213,
+        "recall": 0.8755339643186196,
+        "f1-score": 0.8744334387743007,
+        "support": 23878.0
+      }
+    },
+    "top_model_signals": [
+      {
+        "feature": "country",
+        "importance": 0.08960156196005258
+      },
+      {
+        "feature": "deposit_type",
+        "importance": 0.0762453924482227
+      },
+      {
+        "feature": "agent",
+        "importance": 0.06106903840394421
+      },
+      {
+        "feature": "market_segment",
+        "importance": 0.04410406155689184
+      },
+      {
+        "feature": "required_car_parking_spaces",
+        "importance": 0.039945630889027174
+      },
+      {
+        "feature": "lead_time",
+        "importance": 0.0365172955974844
+      },
+      {
+        "feature": "arrival_date_year",
+        "importance": 0.029805561314995416
+      },
+      {
+        "feature": "previous_cancellations",
+        "importance": 0.028284867648075324
+      },
+      {
+        "feature": "total_of_special_requests",
+        "importance": 0.027619594765821247
+      },
+      {
+        "feature": "customer_type",
+        "importance": 0.01996912940309174
+      },
+      {
+        "feature": "previous_bookings_not_canceled",
+        "importance": 0.004330522726749275
+      },
+      {
+        "feature": "booking_changes",
+        "importance": 0.004327355034902336
+      },
+      {
+        "feature": "arrival_date_week_number",
+        "importance": 0.003986482594973251
+      },
+      {
+        "feature": "adr",
+        "importance": 0.0027250213099270595
+      },
+      {
+        "feature": "total_nights",
+        "importance": 0.0017794652936164261
+      },
+      {
+        "feature": "adr_per_person",
+        "importance": 0.0017320939019053923
+      },
+      {
+        "feature": "days_in_waiting_list",
+        "importance": 0.0011330833736495904
+      },
+      {
+        "feature": "distribution_channel",
+        "importance": 0.0009871967654987805
+      },
+      {
+        "feature": "arrival_month_num",
+        "importance": 0.000972423802612569
+      },
+      {
+        "feature": "meal",
+        "importance": 0.0009187746216049453
+      }
+    ]
+  },
+  "dashboard": "streamlit run streamlit_app.py"
+}

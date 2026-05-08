@@ -1,0 +1,27 @@
+# Environment and secrets
+.env
+venv/
+.venv/
+.streamlit/secrets.toml
+
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Notebook/runtime artifacts
+.ipynb_checkpoints/
+*.log
+streamlit_server*.log
+
+# Local OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

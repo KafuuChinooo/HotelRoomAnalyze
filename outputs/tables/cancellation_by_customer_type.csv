@@ -1,0 +1,5 @@
+customer_type,bookings,cancellations,cancellation_rate
+Transient,89613,36514,0.4075
+Transient-Party,25124,6389,0.2543
+Contract,4076,1262,0.3096
+Group,577,59,0.1023
