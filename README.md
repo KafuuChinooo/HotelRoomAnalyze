@@ -4,6 +4,9 @@ Exploratory data analysis and prediction project for the Kaggle Hotel Booking De
 
 The project analyzes booking demand, cancellation patterns, and segment-level risk. It also
 trains a supervised model to estimate the probability that a booking will be canceled.
+## Project history
+
+This project was originally developed earlier as a personal data analysis project and was later reorganized into this public repository for portfolio presentation. The current version focuses on a cleaner project structure, reproducible setup, model evaluation, and dashboard presentation.
 
 ## Dataset
 
